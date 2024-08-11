@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuyTech - Home</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="cart.css">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  <!-- <div class="alert">
+    <div class="container">
+      <p class="alert-text">Free Shipping On All U.S. Orders $50+</p>
+    </div>
+  </div> -->
+
+  <header class="header">
+    <!-- section 1 start -->
+
+    
+    <!-- section 1 end-->
+    <div class="header-top" data-header>
+      <div class="container"> 
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+ 
+
+        <a href="#" class="logo">
+          <!-- <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing"> -->
+    
+          <h1  style=" font-family:Poppins, sans-serif;  background: linear-gradient(45deg, #0056b3, #0056b3);
+            -webkit-background-clip: text; /* Clip the text to the background */
+            color: transparent;" 
+           >        <i style="font-size:35px; color:bisque ; "  class='fas fa-shopping-cart'></i>
+            BuyTech  </h1>
+
+
+
+
+
+
+        </a>
+
+
+        
+
+        <div class="header-actions">
+          
+
+          <a  href="search.html" class="header-action-btn" aria-label="user">  <ion-icon name="search-outline" aria-hidden="true" aria-hidden="true"></ion-icon></a>
+
+          
+
+          <a  href="login.html" class="header-action-btn" aria-label="user">  <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon></a>
+
+          <!-- <button class="header-action-btn" aria-label="favourite item" onclick="toggleFavouriteMenu()">
+            <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+            <span class="btn-badge">0</span>
+          </button> -->
+
+       
+<button class="header-action-btn" aria-label="cart item" onclick="toggleMenu()">
+  <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+  <span class="btn-badge" id="cartCount">0</span>
+</button>
+        </div>
+
+        <nav style="background: hsl(0, 0%, 0%);" class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a id="active" href="#home" class="navbar-link has-after"> <i style="margin-right: 10px;" class="fas fa-home"></i> Home</a>
+            </li>
+
+            <!-- <li>
+              <a href="#collection" class="navbar-link has-after">Collection</a>
+            </li> -->
+
+            <li>
+              <a  href="products.html" class="navbar-link has-after"> <i style="margin-right: 10px;"class="fas fa-circle"></i> Shop in Stores</a>
+            </li>
+
+            <li>
+              <a  href="#offer" class="navbar-link has-after"> <i style="margin-right: 10px;"class="fas fa-circle"></i> Contact Us</a>
+            </li>
+
+            <li>
+              <a  href="signup.html" class="navbar-link has-after"><i style="margin-right: 10px;"class="fas fa-circle"></i>Get Started </a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <!-- <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing"> -->
+    
+          <h1  style=" font-family:Poppins;  background: linear-gradient(-45deg, #0056b3, #0056b3);
+          -webkit-background-clip: text; /* Clip the text to the background */
+          color: transparent;" 
+         >        <i style="font-size:35px; ; "  class='fas fa-shopping-cart'></i>
+          BuyTech  </h1>
+        </a>
+
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="index.html" class="navbar-link" data-nav-link>Home Feed</a>
+        </li>
+
+   
+        <li>
+          <a href="products.html" class="navbar-link" data-nav-link>Shop in Stores</a>
+        </li>
+
+        <li>
+          <a href="signup.html" class="navbar-link" data-nav-link>Get Started </a>
+        </li>
+
+        <li>
+          <a href="#blog" class="navbar-link" data-nav-link>Connect With Us</a>
+        </li>
+
+        <div class="header-actions">
+
+          <a style="margin-top: 5px; font-size: 18px" href="#" class="header-action-btn" aria-label="cart item" onclick="toggleMenu()">
+            Shopping Cart<ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+          
+          </a>
+
+         
+
+
+        
+        </div>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+    
+  
+      <section class="homb">
+        <section class="hero-section">
+          <h1 class="hi"> Buy & Sell Your Gadgets on Buytech</h1>
+          <p class="pi"> Sell your tech products easily on BuyTech! Reach more customers, manage inventory effortlessly, and boost sales. <strong>Join now to elevate your tech business!</strong></p>
+          <br>
+          <div class="search-container">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            <input type="text" id="search-bar" placeholder="Search for a product">
+            <button class="search-button" onclick="searchFunction()">Search</button>
+          </div>
+          
+          <!-- Container to display the search result -->
+          <div id="search-result" class="search-result"></div>
+          
+          <!-- Add some CSS for styling -->
+          <style>
+            .search-result {
+              margin-top: 20px;
+            }
+          
+            .shop-card {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              border: 1px solid #ddd;
+              padding: 10px;
+              width: 300px; /* Adjust the width as needed */
+              margin: auto;
+            }
+          
+            .card-banner {
+              position: relative;
+              width: 150px; /* Adjust the width as needed */
+              height: 200px; /* Adjust the height as needed */
+            }
+          
+            .card-banner img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          
+            .card-content {
+              text-align: center;
+            }
+          
+            .price {
+              margin: 10px 0;
+            }
+          
+            .rating-wrapper {
+              display: inline-flex;
+            }
+          
+            .rating-wrapper ion-icon {
+              color: #ffcc00; /* Adjust the color for star icons */
+            }
+          
+            .rating-text {
+              margin-left: 10px;
+              font-size: 0.9em;
+              color: #666;
+            }
+          </style>
+          
+<br>          
+          <div class="hero-buttons">
+         
+            
+              <a href="signup.html" class="btn btn-primary">Get Started<i style="margin-left: 10px;" class="fas fa-chevron-right"></i></a>
+
+              <a id="mo" href="products.html" class="btn btn-primary">Shop-In-Stores <i style="margin-left: 10px;" class="fas fa-shopping-cart"></i></a>
+
+              <a style="background: bisque; color: black;" id="moi" href="products.html" class="btn btn-primary"><i style="margin-left: px;" class="fas fa-shopping-bag"></i><i style="margin-left: 15px;" class="fas fa-chevron-right"></i></a>
+          </div>
+      </section>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <!-- <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Summer Collection</h2>
+
+                <p class="card-text">Starting at $17.99</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Shop Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">What’s New?</h2>
+
+                <p class="card-text">Get the glow</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Discover Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Buy 1 Get 1</h2>
+
+                <p class="card-text">Starting at $7.99</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Discover Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+ -->
+
+
+
+
+      <!-- 
+        - #SHOP
+      -->
+
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title"><i class="fas fa-circle"></i> New Products  <p style="font-size: 16px; color: grey;">Shop new arrivals and latest drops</p></h2>
+           
+
+            <a href="#" class="btn-link">
+              
+              <span class="span">Shop All Products</span>
+              <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Iphone Watch Xs Xr Mockup PNG Images,  Iphone Icons, Watch Icons, Iphone PNG Transparent Background - Pngtree.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">N550,000</del>
+
+                    <span class="span">N420,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">iWatch Series 9</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">597 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Best Selling.jpeg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">N12,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">Green Silicone Case</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Apple 16-inch MacBook Pro_ Apple M3 Max chip with 14 core CPU and 30 core GPU, 1TB SSD - Space Black (Latest Model) _ Nebraska Furniture Mart.jpeg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">N2,300,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">2023 M2 Macbook Pro</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">543 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Black Headphones 2 - Beats Solo 3.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">N230,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">Beats By Dre Headphones</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">2112 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Apple 2022 10_9-inch iPad (Wi-Fi, 64GB) (10th Generation).jpeg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">N650,000</del>
+
+                    <span class="span">N470,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">iPad Air 3rd Gen </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">987 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Silver Apple IPhone X Back Side Front View Isolated on White Background Editorial Image - Image of back, cellphone_ 109213560.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">N290,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">iPhone Xs Max 512gb</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">234 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title"><i class="fas fa-circle"></i> Popular Buys  <p style="font-size: 16px; color: grey;">Shop our most viewed products</p></h2>
+
+            <a href="#" class="btn-link">
+              <span class="span">Shop All Products</span>
+              <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/SAMSUNG Galaxy S23 - Black _ 64GB & Free mobile phone memory card _ 1g.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">N1,550,000</del>
+
+                    <span class="span">1,290,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">Samsung S24 Ultra 512gb</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">879 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/SPBPQY Wireless Game Controller Compatible with PS4,Analog Sticks_6-Axis Motion Sensor With Charging Cable- Red Camo - Walmart_com.jpeg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">N45,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">Play Station 4 Pad</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Samsung Galaxy Watch6 40mm Smart Watch - Graphite.jpeg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">N350,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">Galaxy Watch 4</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Restored Apple Air_Pods 3 nd Generation Earbud & in-ear Headphones White (Refurbished).jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">N130,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">Apple Airpods 3</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/Apple 16-inch MacBook Pro_ Apple M3 Max chip with 14 core CPU and 30 core GPU, 1TB SSD - Space Black (Latest Model) _ Nebraska Furniture Mart.jpeg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">N2,550,000</del>
+
+                    <span class="span">N2,010,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">2023 M3 Macbook Pro</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="assets/images/GOOGLE Pixel 8 Pro Porcelaine 256Go - Smartphone.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn wishlist-btn" aria-label="add to wishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                       <a href="item.html" class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon></a>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">N870,000</span>
+                  </div>
+
+                  <h3>
+                    <a href="item.html" class="card-title">Google Pixel 8 Pro 256gb</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #OFFER
+      -->
+<!-- 
+      <section class="section offer" id="offer" aria-label="offer" data-section>
+        <div class="container">
+
+          <figure class="offer-banner">
+            <img src="./assets/images/offer-banner-1.jpg" width="305" height="408" loading="lazy" alt="offer products"
+              class="w-100">
+
+            <img src="./assets/images/offer-banner-2.jpg" width="450" height="625" loading="lazy" alt="offer products"
+              class="w-100">
+          </figure>
+
+          <div class="offer-content">
+
+            <p class="offer-subtitle">
+              <span class="span">Special Offer</span>
+
+              <span class="badge" aria-label="20% off">-20%</span>
+            </p>
+
+            <h2 class="h2-large section-title">Mountain Pine Bath Oil</h2>
+
+            <p class="section-text">
+              Made using clean, non-toxic ingredients, our products are designed for everyone.
+            </p>
+
+            <div class="countdown">
+
+              <span class="time" aria-label="days">15</span>
+              <span class="time" aria-label="hours">21</span>
+              <span class="time" aria-label="minutes">46</span>
+              <span class="time" aria-label="seconds">08</span>
+
+            </div>
+
+            <a href="#" class="btn btn-primary">Get Only N550,000</a>
+
+          </div>
+
+        </div>
+      </section> -->
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find a location nearest you. See <a href="products.html" class="link">Our Stores</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+391 (0)35 2568 4593</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">info@buytech.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">New Products</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Best Sellers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bundle & Save</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Gift Card</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Infomation</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Start a Return</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Good emails.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about new collections and product launches.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 Enoch Chisom Eze.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <h1  style=" font-family:Poppins;  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+          -webkit-background-clip: text; /* Clip the text to the background */
+          color: transparent;" 
+         >        <i style="font-size:35px; ; "  class='fas fa-shopping-cart'></i>
+          BuyTech  </h1>
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+ 
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- <a href="" class="back-top-btnn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="cart-outline" aria-hidden="true"  onclick="toggleMenuu()"></ion-icon>
+
+
+  </a> -->
+  <a href="#" class="open-category" onclick="toggleCategories()">Shop in Categories <i style="margin-left: 5px; transform:rotate(-50deg); background: white; color: black; padding: 5px; border-radius:50%" class="fas fa-arrow-right"></i></a>
+    
+    <div class="categories hidden">
+        <a href="products.html" class="category-btn"><i style="margin-right: 10px; margin-left: 5px;"  class="fas fa-mobile-alt"></i> Shop Phones </a>
+        <a href="products.html" class="category-btn"> <i style="margin-right: 10px; margin-left: 5px;"  class="fas fa-laptop"></i> Shop Laptops</a>
+        <a href="products.html" class="category-btn"><i style="margin-right: 10px; margin-left: 5px;" class="fas fa-headphones-alt"></i> Shop Accessories</a>
+    </div>
+
+<script>
+  function toggleCategories() {
+    const categories = document.querySelector('.categories');
+    categories.classList.toggle('hidden');
+}
+
+</script>
+
+
+
+
+
+
+
+
+       
+  <button class="back-top-btnn" aria-label="cart item" onclick="toggleMenu()">
+    <ion-icon name="cart-outline" aria-hidden="true"></ion-icon> 
+    
+    <span class="btn-badge" id="cartCountt">0</span>
+  </button>
+
+
+  <div id="wishlistMenu" class="wishlist-menu">
+    <button class="close-btn" onclick="closeFavouriteMenu()">
+      <ion-icon name="close"></ion-icon>
+    </button>
+    <h1>wishlist <i class="fas fa-star"></i></h1>
+    <p>Add what you'd like to later buy in the future to your wishlist.</p>
+<br>
+<p>However, you'll have to login first to use this feature <a style="color: rgb(95, 95, 252); text-decoration:underline" href="login.html">Login Now</a></p>
+<!--    
+    <h2 id="emptyWishlistMessage">Your wishlist is currently empty.</h2> -->
+    <ul id="wishlistMenu"></ul>
+    <br>
+ 
+    <!-- Favourite menu content goes here -->
+  </div>
+
+<script>
+  function toggleFavouriteMenu() {
+    var favouriteMenu = document.getElementById("wishlistMenu");
+    favouriteMenu.classList.toggle("open");
+  }
+  
+  
+// Function to close the favourite menu
+function closeFavouriteMenu() {
+  var favouriteMenu = document.getElementById("wishlistMenu");
+  favouriteMenu.classList.remove("open");
+}
+
+// Add event listener to the close button
+document.addEventListener("DOMContentLoaded", function() {
+  var closeButton = document.querySelector(".close-btn");
+  if (closeButton) {
+    closeButton.addEventListener("click", closeFavouriteMenu);
+  }
+});
+  
+</script>
+
+
+
+<script>
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- cart menu -->
+  <div class="popup-menu" id="cartMenu">
+    <button onclick="toggleMenu()"> <ion-icon name="close-outline" ></ion-icon></button>
+   <h1>Shopping Cart <i class="fas fa-shopping-cart"></i></h1>
+   <p>Add what you'd like to buy and purhase them instantly.</p>
+   <br>
+   <h2  id="emptyCartMessage">Looks like you don't have anything to buy :/ <a href="products.html">Let's fix that <i id="bi" class="fas fa-chevron-right"></i></a></h2>
+
+
+    <!-- Add your popup menu content here -->
+    <!-- This could be a list of items, links, or any other content -->
+    <!-- For example: -->
+<br>
+<br>
+    <ul id="cartItems">
+      <!-- Cart items will be added here dynamically -->
+  </ul>
+  <div id="totalPrice">Total Price: ₦<span 
+   style="font-size: 35px; color: #0056b3; font-weight:bold;" id="totalPriceValue">0.00</span>
+ 
+    
+    <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+  </div>
+  </div>
+  
+    <script>
+      function toggleMenu() {
+          var menu = document.getElementById("cartMenu");
+          menu.classList.toggle("open");
+      }
+ 
+        </script>
+
+
+
+
+
+
+        <script>
+   // Load cart items from localStorage when the page loads
+window.onload = function() {
+  var storedCartItems = localStorage.getItem('cartItems');
+  var storedCartItemCount = localStorage.getItem('cartItemCount');
+
+  if (storedCartItems) {
+      cartItems = JSON.parse(storedCartItems);
+      cartItemCount = parseInt(storedCartItemCount, 10);
+      updateCartCount(cartItemCount);
+      updateCartCountt();
+      updateCartMenu();
+      updateTotalPrice();
+  }
+};
+
+function updateCartMenu() {
+  var cartItemsElement = document.getElementById("cartItems");
+  var emptyCartMessage = document.getElementById("emptyCartMessage");
+
+  // Check if cart is empty
+  if (Object.keys(cartItems).length === 0) {
+      emptyCartMessage.style.display = "block"; // Show the message
+  } else {
+      emptyCartMessage.style.display = "none"; // Hide the message
+  }
+
+  cartItemsElement.innerHTML = ''; // Clear existing items
+
+  // Add items to cart menu
+  for (var productName in cartItems) {
+      var item = cartItems[productName];
+      var li = document.createElement("li");
+      var img = document.createElement("img");
+      img.src = item.imageUrl;
+      img.alt = productName;
+      li.appendChild(img);
+      var span = document.createElement("span");
+      span.textContent = productName + " - ₦" + numberWithCommas(item.price);
+      li.appendChild(span);
+      var quantityCounter = document.createElement("span");
+      quantityCounter.textContent = "QTY: " + item.quantity;
+      quantityCounter.className = "quantity-counter";
+      li.appendChild(quantityCounter);
+      var deleteBtn = document.createElement("button");
+      deleteBtn.innerHTML = '<i class="fas fa-trash-alt"></i>'; // Add trash bin icon
+      deleteBtn.className = "delete-btn";
+      deleteBtn.addEventListener("click", (function(productName) {
+          return function() {
+              deleteFromCart(productName);
+          };
+      })(productName));
+      li.appendChild(deleteBtn);
+      var minusBtn = document.createElement("button");
+      minusBtn.innerHTML = '<i class="fas fa-minus"></i>'; // Add minus icon
+      minusBtn.className = "quantity-btn";
+      minusBtn.addEventListener("click", (function(productName) {
+          return function() {
+              decreaseQuantity(productName);
+          };
+      })(productName));
+      li.appendChild(minusBtn);
+      var plusBtn = document.createElement("button");
+      plusBtn.innerHTML = '<i class="fas fa-plus"></i>'; // Add plus icon
+      plusBtn.className = "quantity-btn";
+      plusBtn.addEventListener("click", (function(productName) {
+          return function() {
+              increaseQuantity(productName);
+          };
+      })(productName));
+      li.appendChild(plusBtn);
+      cartItemsElement.appendChild(li);
+  }
+}
+
+var cartItemCount = 0; // Initialize cart item count
+var cartItems = {}; // Initialize cart items object
+
+function addToCart(productName, price, imageUrl) {
+  // Check if product already exists in cart
+  if (cartItems.hasOwnProperty(productName)) {
+      // Increment quantity if product already exists
+      cartItems[productName].quantity++;
+  } else {
+      // Add new product to cart
+      cartItems[productName] = {
+          price: price,
+          quantity: 1,
+          imageUrl: imageUrl
+      };
+  }
+
+  updateCartCount(++cartItemCount); // Increment count and update badge
+  updateCartMenu(); // Update cart menu
+  updateTotalPrice(); // Update total price
+  updateCartCountt(); // Update cart count for the alternate button
+  saveCartToLocalStorage(); // Save cart items to localStorage
+}
+
+function updateCartCountt() {
+  var cartCounttElement = document.getElementById("cartCountt");
+  cartCounttElement.textContent = cartItemCount;
+}
+
+function deleteFromCart(productName) {
+  if (cartItems.hasOwnProperty(productName)) {
+      cartItemCount -= cartItems[productName].quantity;
+      delete cartItems[productName];
+      updateCartCount(cartItemCount); // Decrement count and update badge
+      updateCartMenu(); // Update cart menu
+      updateTotalPrice(); // Update total price
+      updateCartCountt(); // Update cart count for the alternate button
+      saveCartToLocalStorage(); // Save cart items to localStorage
+  }
+}
+
+function increaseQuantity(productName) {
+  if (cartItems.hasOwnProperty(productName)) {
+      cartItems[productName].quantity++;
+      cartItemCount++;
+      updateCartCount(cartItemCount); // Update badge
+      updateCartMenu(); // Update cart menu
+      updateTotalPrice(); // Update total price
+      updateCartCountt(); // Update cart count for the alternate button
+      saveCartToLocalStorage(); // Save cart items to localStorage
+  }
+}
+
+function decreaseQuantity(productName) {
+  if (cartItems.hasOwnProperty(productName)) {
+      if (cartItems[productName].quantity > 1) {
+          cartItems[productName].quantity--;
+          cartItemCount--;
+          updateCartCount(cartItemCount); // Update badge
+          updateCartMenu(); // Update cart menu
+          updateTotalPrice(); // Update total price
+          updateCartCountt(); // Update cart count for the alternate button
+          saveCartToLocalStorage(); // Save cart items to localStorage
+      }
+  }
+}
+
+function updateCartCount(count) {
+  var cartCountElement = document.getElementById("cartCount");
+  cartCountElement.textContent = count;
+}
+
+function saveCartToLocalStorage() {
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  localStorage.setItem('cartItemCount', cartItemCount);
+}
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function updateTotalPrice() {
+  var totalPriceValueElement = document.getElementById("totalPriceValue");
+  var totalPrice = 0;
+  for (var productName in cartItems) {
+      totalPrice += cartItems[productName].price * cartItems[productName].quantity;
+  }
+  totalPriceValueElement.textContent = numberWithCommas(totalPrice.toFixed(2));
+  // Update text on checkout button
+  document.getElementById("checkoutBtn").textContent = "Checkout ₦" + numberWithCommas(totalPrice.toFixed(2));
+}
+
+function toggleCart() {
+  var cartMenu = document.getElementById("cartMenu");
+  cartMenu.classList.toggle("open");
+}
+
+// Get all add to cart buttons and add event listeners
+var addToCartButtons = document.querySelectorAll(".action-btn[aria-label='add to cart']");
+addToCartButtons.forEach(function(button) {
+  button.addEventListener("click", function(event) {
+      var productCard = event.target.closest(".shop-card");
+      var productName = productCard.querySelector(".card-title").textContent;
+      var productPrice = parseFloat(productCard.querySelector(".price .span").textContent.replace("N", "").replace(",", ""));
+      var productImage = productCard.querySelector(".card-banner img").src;
+      addToCart(productName, productPrice, productImage);
+  });
+});
+
+function checkout() {
+  alert("Redirecting to checkout page...");
+  // Implement your checkout logic here (e.g., redirect to checkout page)
+  window.location.href = "checkout.html"; // Redirect to checkout.html
+}
+
+          
+        </script>
+        
+
+
+
+
+
+
+
+
+        <script>
+// List of products
+const products = [
+  {
+    name: "iWatch Series 9",
+    image: "assets/images/Iphone Watch Xs Xr Mockup PNG Images,  Iphone Icons, Watch Icons, Iphone PNG Transparent Background - Pngtree.jpeg",
+    price: "N420,000",
+    originalPrice: "N550,000",
+    rating: 5,
+    reviews: 597
+  },
+  {
+    name: "Green Silicone Case",
+    image: "assets/images/Best Selling.jpeg",
+    price: "N12,000",
+    rating: 5,
+    reviews: 5170
+  },
+  {
+    name: "2023 M2 Macbook Pro",
+    image: "assets/images/Apple 16-inch MacBook Pro_ Apple M3 Max chip with 14 core CPU and 30 core GPU, 1TB SSD - Space Black (Latest Model) _ Nebraska Furniture Mart.jpeg",
+    price: "N2,300,000",
+    rating: 5,
+    reviews: 543
+  },
+  {
+    name: "Beats By Dre Headphones",
+    image: "assets/images/Black Headphones 2 - Beats Solo 3.jpeg",
+    price: "N230,000",
+    rating: 5,
+    reviews: 2112
+  },
+  {
+    name: "iPad Air 3rd Gen",
+    image: "assets/images/Apple 2022 10_9-inch iPad (Wi-Fi, 64GB) (10th Generation).jpeg",
+    price: "N470,000",
+    originalPrice: "N650,000",
+    rating: 5,
+    reviews: 987
+  },
+  {
+    name: "iPhone Xs Max 512gb",
+    image: "assets/images/Silver Apple IPhone X Back Side Front View Isolated on White Background Editorial Image - Image of back, cellphone_ 109213560.jpeg",
+    price: "N290,000",
+    rating: 5,
+    reviews: 234
+  }
+];
+
+// Search function
+function searchFunction() {
+  const searchInput = document.getElementById('search-bar').value.toLowerCase();
+  const searchResultContainer = document.getElementById('search-result');
+  
+  // Clear previous search result
+  searchResultContainer.innerHTML = '';
+
+  // Find the product
+  const product = products.find(p => p.name.toLowerCase().includes(searchInput));
+
+  if (product) {
+    // Create HTML to display product
+    const productHtml = `
+      <div class="shop-card">
+        <div class="card-banner img-holder">
+          <img src="${product.image}" loading="lazy" alt="${product.name}" class="img-cover">
+        </div>
+        <div class="card-content">
+          <div class="price">
+            ${product.originalPrice ? `<del class="del">${product.originalPrice}</del>` : ''}
+            <span class="span">${product.price}</span>
+          </div>
+          <h3><a href="item.html" class="card-title">${product.name}</a></h3>
+          <div class="card-rating">
+            <div class="rating-wrapper" aria-label="5 star rating">
+              ${'★'.repeat(product.rating)}
+            </div>
+            <p class="rating-text">${product.reviews} reviews</p>
+          </div>
+        </div>
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

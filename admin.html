@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="admin.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="images/logo.png" alt="">
+            </div>
+
+            <span class="logo_name">BuyTech</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="admin.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Content</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+                <li><a href="adminproducts.html">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Products</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Users</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Upload</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li>
+                    <a href="#" id="logoutButton">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Logout</span>
+                    </a>
+                </li>
+                
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div id="logoutPopup" class="popup">
+        <p>Logging out...</p>
+    </div>
+
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+    
+            // Show the logout popup
+            var logoutPopup = document.getElementById('logoutPopup');
+            logoutPopup.style.display = 'block';
+    
+            // Simulate a delay (you can replace this with actual logout logic)
+            setTimeout(function() {
+                // Perform logout actions (clear session, etc. if applicable)
+    
+                // Redirect to adminlog.html
+                window.location.href = 'adminlog.html';
+            }, 1500); // 1500 milliseconds (1.5 seconds) delay before redirecting
+        });
+    </script>
+    
+    
+    
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i  class="uil uil-circle"></i>
+                        <span class="text">Total Products</span>
+                        <span class="number">0</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Total General Users</span>
+                        <span class="number">0</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-share"></i>
+                        <span class="text">Total Sellers </span>
+                        <span class="number">0</span>
+                    </div>
+
+                    <div class="box box4">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="text">Total Buyers</span>
+                        <span class="number">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-content">
+                <div class="activity">
+                    <div class="title">
+                        <i class="uil uil-clock-three"></i>
+                        <span class="text">Recent Activity</span>
+                    </div>
+    
+                    <div class="activity-data">
+                        <div class="data names">
+                            <span class="data-title">Name</span>
+                            <!-- Display usernames -->
+                            <!-- Populate dynamically using JavaScript -->
+                        </div>
+                        <div class="data email">
+                            <span class="data-title">Email</span>
+                            <!-- Display emails -->
+                            <!-- Populate dynamically using JavaScript -->
+                        </div>
+                        <div class="data joined">
+                            <span class="data-title">Joined</span>
+                            <!-- Display joined dates -->
+                            <!-- Populate dynamically using JavaScript -->
+                        </div>
+                        <div class="data type">
+                            <span class="data-title">Type</span>
+                            <!-- Display types (buyer/seller) -->
+                            <!-- Populate dynamically using JavaScript -->
+                        </div>
+                        <div class="data status">
+                            <span class="data-title">Password</span>
+                            <!-- Display passwords -->
+                            <!-- Populate dynamically using JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </section>
+    
+        <script src="admin.js"></script>
+
+
+
+
+
+
+        <script>
+// admin.js
+
+// Function to populate recent activity table from localStorage
+function populateRecentActivity() {
+    const activityDataContainer = document.querySelector('.activity-data');
+
+    // Retrieve all user data from localStorage
+    const allUsersData = JSON.parse(localStorage.getItem('allUsersData')) || [];
+
+    // Calculate total number of users (unique usernames or emails)
+    const totalUsers = countUniqueUsers(allUsersData);
+
+    // Update the Total Users box in the dashboard
+    const totalUsersElement = document.querySelector('.box2 .number');
+    totalUsersElement.textContent = totalUsers;
+
+    // Loop through each user data and populate the table
+    allUsersData.forEach(userData => {
+        const nameElement = document.createElement('span');
+        nameElement.textContent = userData.username;
+        activityDataContainer.querySelector('.names').appendChild(nameElement);
+
+        const emailElement = document.createElement('span');
+        emailElement.textContent = userData.email;
+        activityDataContainer.querySelector('.email').appendChild(emailElement);
+
+        const joinedElement = document.createElement('span');
+        joinedElement.textContent = userData.joined;
+        activityDataContainer.querySelector('.joined').appendChild(joinedElement);
+
+        const typeElement = document.createElement('span');
+        typeElement.textContent = userData.role; // Assuming role determines type (buyer/seller)
+        activityDataContainer.querySelector('.type').appendChild(typeElement);
+
+        const passwordElement = document.createElement('span');
+        passwordElement.textContent = userData.password; // Note: Displaying password in clear text is not secure
+        activityDataContainer.querySelector('.status').appendChild(passwordElement);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Retrieve stored user data from localStorage
+    const storedUserData = localStorage.getItem('allUsersData');
+    const allUsersData = JSON.parse(storedUserData) || [];
+
+    // Calculate the total number of unique users
+    const totalUsers = countUniqueUsers(allUsersData);
+
+    // Update the DOM to display total users
+    const totalUsersElement = document.querySelector('.box2 .number');
+    totalUsersElement.textContent = totalUsers.toLocaleString(); // Format as desired
+
+    // Calculate the total number of unique sellers
+    const totalSellers = countUniqueSellers(allUsersData);
+
+    // Update the DOM to display total sellers
+    const totalSellersElement = document.querySelector('.box3 .number');
+    totalSellersElement.textContent = totalSellers.toLocaleString(); // Format as desired
+});
+
+
+
+// Function to count unique users (based on email)
+function countUniqueUsers(allUsersData) {
+    let uniqueUsers = new Set();
+
+    // Count unique users based on their emails
+    allUsersData.forEach(userData => {
+        uniqueUsers.add(userData.email);
+    });
+
+    return uniqueUsers.size;
+}
+
+// Function to count unique sellers (based on a condition, e.g., role)
+function countUniqueSellers(allUsersData) {
+    let uniqueSellers = new Set();
+
+    // Count unique sellers based on a condition (e.g., role === 'seller')
+    allUsersData.forEach(userData => {
+        if (userData.role === 'seller') {
+            uniqueSellers.add(userData.email);
+        }
+    });
+
+    return uniqueSellers.size;
+}
+
+
+// Call function to populate recent activity on page load
+populateRecentActivity();
+
+        </script>
+    
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Retrieve stored user data from localStorage
+        const storedUserData = localStorage.getItem('allUsersData');
+        const allUsersData = JSON.parse(storedUserData) || [];
+    
+        // Calculate the total number of unique buyers
+        const totalBuyers = countUniqueBuyers(allUsersData);
+    
+        // Update the DOM to display total buyers
+        const totalBuyersElement = document.querySelector('.box4 .number');
+        totalBuyersElement.textContent = totalBuyers.toLocaleString(); // Format as desired
+    });
+    
+    // Function to count unique buyers (based on a condition, e.g., role)
+    function countUniqueBuyers(allUsersData) {
+        let uniqueBuyers = new Set();
+    
+        // Count unique buyers based on a condition (e.g., role === 'buyer')
+        allUsersData.forEach(userData => {
+            if (userData.role === 'buyer') {
+                uniqueBuyers.add(userData.email);
+            }
+        });
+    
+        return uniqueBuyers.size;
+    }
+    
+</script>
+
+
+
+<script>
+    // admin.js
+
+</script>
+
+
+
+</body>
+</html>

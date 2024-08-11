@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="BuyTech Logo">
+            <h1>BuyTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <section class="profile-info">
+            <div class="profile-header">
+                <div class="profile-picture">
+                    <label for="profilePicInput">
+                        <img id="profilePicPreview" src="images/default-profile.png" alt="Profile Picture">
+                        <input type="file" id="profilePicInput" accept="image/*" style="display: none;">
+                    </label>
+                    <button id="editProfilePicBtn">Edit</button>
+                </div>
+                <h2>Welcome to your Profile, <span id="username"></span>!</h2>
+            </div>
+            <div class="user-data">
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Password:</strong> *********</p>
+                <p><strong>Role:</strong> <span id="role"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BuyTech. All rights reserved.</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

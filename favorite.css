@@ -1,0 +1,39 @@
+/* CSS for the favorite menu */
+#favoriteMenu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start the menu off-screen */
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; /* Smooth transition for sliding animation */
+  }
+  
+  #favoriteMenu.open {
+    right: 0; /* Slide the menu into view */
+  }
+  
+  /* Optional: Styling for menu items */
+  .favorite-item {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .favorite-item:last-child {
+    border-bottom: none; /* Remove border from last item */
+  }
+  
+  /* Optional: Styling for badge */
+  .btn-badge {
+    background-color: #ff0000;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  

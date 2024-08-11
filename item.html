@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuyTech - Product Page</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="item.css">
+<link rel="stylesheet" href="cart.css">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+
+</head>
+
+<body id="top">
+ <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+    <!-- section 1 start -->
+   
+    <!-- section 1 end-->
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+          <!-- <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing"> -->
+    
+          <h1  style=" font-family:Poppins, sans-serif;  background: linear-gradient(45deg, #0056b3, #0056b3);
+            -webkit-background-clip: text; /* Clip the text to the background */
+            color: transparent;" 
+           >        <i style="font-size:35px; color:bisque ; "  class='fas fa-shopping-cart'></i>
+            BuyTech  </h1>
+        </a>
+
+        <div class="header-actions">
+            
+
+          <a  href="search.html" class="header-action-btn" aria-label="user">  <ion-icon name="search-outline" aria-hidden="true" aria-hidden="true"></ion-icon></a>
+
+          <a  href="login.html" class="header-action-btn" aria-label="user">  <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon></a>
+
+
+          <!-- <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button> -->
+
+       
+<button class="header-action-btn" aria-label="cart item" onclick="toggleMenu()">
+  <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+  <span class="btn-badge" id="cartCount">0</span>
+</button>
+        </div>
+
+        <nav style="background: #000000;" class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a  href="index.html" class="navbar-link has-after"> <i style="margin-right: 10px;" class="fas fa-home"></i> Home</a>
+            </li>
+
+            <!-- <li>
+              <a href="#collection" class="navbar-link has-after">Collection</a>
+            </li> -->
+
+            <li>
+              <a  href="products.html" class="navbar-link has-after"> <i style="margin-right: 10px;"class="fas fa-shopping-cart"></i> Shop in Stores</a>
+            </li>
+
+            <li>
+              <a  href="#offer" class="navbar-link has-after"> <i style="margin-right: 10px;" class="fas fa-phone"></i> Contact Us</a>
+            </li>
+
+            <li>
+              <a  href="signup.html" class="navbar-link has-after"><i style="margin-right: 10px;" class="fas fa-plus"></i>Get Started </a>
+            </li>
+
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <!-- <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing"> -->
+    
+          <h1  style=" font-family:Poppins, sans-serif;  background: linear-gradient(45deg, #0056b3, #0056b3);
+          -webkit-background-clip: text; /* Clip the text to the background */
+          color: transparent;" 
+         >        <i style="font-size:35px; color:bisque ; "  class='fas fa-shopping-cart'></i>
+          BuyTech  </h1>
+        </a>
+
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="index.html" class="navbar-link" data-nav-link>Home Feed</a>
+        </li>
+
+   
+        <li>
+          <a href="products.html" class="navbar-link" data-nav-link>Shop in Stores</a>
+        </li>
+
+        <li>
+          <a href="signup.html" class="navbar-link" data-nav-link>Get Started </a>
+        </li>
+
+        <li>
+          <a href="#blog" class="navbar-link" data-nav-link>Connect With Us</a>
+        </li>
+
+        <div class="header-actions">
+
+          <a style="margin-top: 5px; font-size: 18px" href="#" class="header-action-btn" aria-label="cart item" onclick="toggleMenu()">
+            Shopping Cart<ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+          
+          </a>
+
+         
+
+
+        
+        </div>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <article>
+
+        <section class="product-page">
+            <div class="product-container">
+                
+<a  id="goBackLink" href="">  <i style="color: #202020; font-size: 25px;" class="fas fa-chevron-left"> </i></a>
+
+               
+                <div class="product-images">
+                    <img src="assets/images/Apple 16-inch MacBook Pro_ Apple M3 Max chip with 14 core CPU and 30 core GPU, 1TB SSD - Space Black (Latest Model) _ Nebraska Furniture Mart.jpeg" alt="M3 MacBook Pro" class="main-image" onclick="openLightbox('assets/images/Apple 16-inch MacBook Pro_ Apple M3 Max chip with 14 core CPU and 30 core GPU, 1TB SSD - Space Black (Latest Model) _ Nebraska Furniture Mart.jpeg')">
+                    <div class="thumbnail-images">
+                        <img src="assets/images/MacBook Air 13_6 (2022, M2) skins - Custom _ Body + Keyboard Surround + Trackpad.jpeg" alt="M3 MacBook Pro Thumbnail 1" onclick="openLightbox('assets/images/MacBook Air 13_6 (2022, M2) skins - Custom _ Body + Keyboard Surround + Trackpad.jpeg')">
+
+                        <img src="assets/images/Apple 2019 MacBook Pro (16_, 16GB RAM, 512GB Speicherplatz) - Space Grau.jpeg" alt="M3 MacBook Pro Thumbnail 2" onclick="openLightbox('assets/images/Apple 2019 MacBook Pro (16_, 16GB RAM, 512GB Speicherplatz) - Space Grau.jpeg')">
+
+                        <img src="assets/images/Apple 16-inch MacBook Pro_ Apple M3 Max chip with 14 core CPU and 30 core GPU, 1TB SSD - Space Black (Latest Model) _ Nebraska Furniture Mart.jpeg" alt="M3 MacBook Pro Thumbnail 3" onclick="openLightbox('assets/images/Apple 16-inch MacBook Pro_ Apple M3 Max chip with 14 core CPU and 30 core GPU, 1TB SSD - Space Black (Latest Model) _ Nebraska Furniture Mart.jpeg')">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>M3 MacBook Pro</h1>
+                    <p class="price">2,300,000 NGN</p>
+                    <p class="product-description">
+                        Experience the power and performance of the new M3 MacBook Pro. Featuring the latest M3 chip, a stunning Retina display, and all-day battery life, this laptop is designed for professionals and creatives alike.
+                    </p>
+                    <ul class="product-specifications">
+                        <li>Processor: Apple M3 chip</li>
+                        <li>Memory: 16GB unified memory</li>
+                        <li>Storage: 512GB SSD</li>
+                        <li>Display: 16-inch Retina display with True Tone</li>
+                        <li>Graphics: Integrated 10-core GPU</li>
+                        <li>Battery Life: Up to 20 hours</li>
+                        <li>Operating System: macOS</li>
+                        <li>Weight: 2.0 kg</li>
+                    </ul>
+                    <div class="product-actions">
+                        <button class="btn btn-primary"><i style="margin-right: 5px;" class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        
+                        <button class="btn btn-secondary"><i style="margin-right: 5px;" class="fas fa-check"></i> Buy Now</button>
+                    </div>
+                    <br>
+                    <div class="product-reviews">
+                        <h2>Customer Reviews</h2>
+                        <div class="review">
+                            <p><strong>John Doe</strong></p>
+                            <p>Rating: <span class="rating">★★★★☆</span></p>
+                            <p>This is an amazing laptop with great performance. The battery life is incredible and the display is just stunning.</p>
+                        </div>
+                        <div class="review">
+                            <p><strong>Jane Smith</strong></p>
+                            <p>Rating: <span class="rating">★★★★★</span></p>
+                            <p>Perfect for my design work. The M3 chip is super fast, and the build quality is top-notch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </article>
+  </main>
+
+
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Lightbox Image">
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+
+
+
+<script>
+    let currentImageIndex = 0;
+    const imageUrls = ["macbook-pro-main.jpg", "macbook-pro-thumbnail1.jpg", "macbook-pro-thumbnail2.jpg", "macbook-pro-thumbnail3.jpg"];
+    
+    function openLightbox(imageUrl) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+    
+        currentImageIndex = imageUrls.indexOf(imageUrl);
+        lightboxImg.src = imageUrl;
+        lightbox.style.display = "flex";
+    }
+    
+    function changeImage(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex < 0) {
+            currentImageIndex = imageUrls.length - 1;
+        } else if (currentImageIndex >= imageUrls.length) {
+            currentImageIndex = 0;
+        }
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = imageUrls[currentImageIndex];
+    }
+    
+    function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "none";
+    }
+    
+    
+</script>
+
+
+
+<script>
+    document.getElementById("goBackLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+    
+        history.back(); // Go back to the previous page
+    });
+    </script>
+  
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find a location nearest you. See <a href="products.html" class="link">Our Stores</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+391 (0)35 2568 4593</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">info@buytech.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">New Products</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Best Sellers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bundle & Save</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Gift Card</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Infomation</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Start a Return</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Good emails.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about new collections and product launches.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 Enoch Chisom Eze.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <h1  style=" font-family:Poppins;  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+          -webkit-background-clip: text; /* Clip the text to the background */
+          color: transparent;" 
+         >        <i style="font-size:35px; ; "  class='fas fa-shopping-cart'></i>
+          BuyTech  </h1>
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+ 
+
+ 
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- <a href="" class="back-top-btnn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="cart-outline" aria-hidden="true"  onclick="toggleMenuu()"></ion-icon>
+
+
+  </a> -->
+ 
+
+
+
+
+
+
+
+
+       
+  <button class="back-top-btnn" aria-label="cart item" onclick="toggleMenu()">
+    <ion-icon name="cart-outline" aria-hidden="true"></ion-icon> 
+    
+    <span class="btn-badge" id="cartCountt">0</span>
+  </button>
+
+  <div class="popup-menu" id="cartMenu">
+    <button onclick="toggleMenu()"> <ion-icon name="close-outline" ></ion-icon></button>
+   <h1>Shopping Cart <i class="fas fa-shopping-cart"></i></h1>
+   <p>Add what you'd like to buy and purhase them instantly.</p>
+   <br>
+   <h2  id="emptyCartMessage">Looks like you don't have anything to buy :/ <a href="products.html">Let's fix that <i id="bi" class="fas fa-chevron-right"></i></a></h2>
+
+
+    <!-- Add your popup menu content here -->
+    <!-- This could be a list of items, links, or any other content -->
+    <!-- For example: -->
+<br>
+<br>
+    <ul id="cartItems">
+      <!-- Cart items will be added here dynamically -->
+  </ul>
+  <div id="totalPrice">Total Price: ₦<span 
+   style="font-size: 35px; color: #0056b3; font-weight:bold;" id="totalPriceValue">0.00</span>
+ 
+
+    <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+  </div>
+  </div>
+  
+    <script>
+      function toggleMenu() {
+          var menu = document.getElementById("cartMenu");
+          menu.classList.toggle("open");
+      }
+ 
+        </script>
+
+
+
+
+
+
+        <script>
+// Load cart items from localStorage when the page loads
+window.onload = function() {
+    var storedCartItems = localStorage.getItem('cartItems');
+    var storedCartItemCount = localStorage.getItem('cartItemCount');
+
+    if (storedCartItems) {
+        cartItems = JSON.parse(storedCartItems);
+        cartItemCount = parseInt(storedCartItemCount, 10);
+        updateCartCount(cartItemCount);
+        updateCartCountt();
+        updateCartMenu();
+        updateTotalPrice();
+    }
+};
+
+function updateCartMenu() {
+    var cartItemsElement = document.getElementById("cartItems");
+    var emptyCartMessage = document.getElementById("emptyCartMessage");
+
+    // Check if cart is empty
+    if (Object.keys(cartItems).length === 0) {
+        emptyCartMessage.style.display = "block"; // Show the message
+    } else {
+        emptyCartMessage.style.display = "none"; // Hide the message
+    }
+
+    cartItemsElement.innerHTML = ''; // Clear existing items
+
+    // Add items to cart menu
+    for (var productName in cartItems) {
+        var item = cartItems[productName];
+        var li = document.createElement("li");
+        var img = document.createElement("img");
+        img.src = item.imageUrl;
+        img.alt = productName;
+        li.appendChild(img);
+        var span = document.createElement("span");
+        span.textContent = productName + " - ₦" + numberWithCommas(item.price);
+        li.appendChild(span);
+        var quantityCounter = document.createElement("span");
+        quantityCounter.textContent = "QTY: " + item.quantity;
+        quantityCounter.className = "quantity-counter";
+        li.appendChild(quantityCounter);
+        var deleteBtn = document.createElement("button");
+        deleteBtn.innerHTML = '<i class="fas fa-trash-alt"></i>'; // Add trash bin icon
+        deleteBtn.className = "delete-btn";
+        deleteBtn.addEventListener("click", (function(productName) {
+            return function() {
+                deleteFromCart(productName);
+            };
+        })(productName));
+        li.appendChild(deleteBtn);
+        var minusBtn = document.createElement("button");
+        minusBtn.innerHTML = '<i class="fas fa-minus"></i>'; // Add minus icon
+        minusBtn.className = "quantity-btn";
+        minusBtn.addEventListener("click", (function(productName) {
+            return function() {
+                decreaseQuantity(productName);
+            };
+        })(productName));
+        li.appendChild(minusBtn);
+        var plusBtn = document.createElement("button");
+        plusBtn.innerHTML = '<i class="fas fa-plus"></i>'; // Add plus icon
+        plusBtn.className = "quantity-btn";
+        plusBtn.addEventListener("click", (function(productName) {
+            return function() {
+                increaseQuantity(productName);
+            };
+        })(productName));
+        li.appendChild(plusBtn);
+        cartItemsElement.appendChild(li);
+    }
+}
+
+var cartItemCount = 0; // Initialize cart item count
+var cartItems = {}; // Initialize cart items object
+
+function addToCart(productName, price, imageUrl) {
+    // Check if product already exists in cart
+    if (cartItems.hasOwnProperty(productName)) {
+        // Increment quantity if product already exists
+        cartItems[productName].quantity++;
+    } else {
+        // Add new product to cart
+        cartItems[productName] = {
+            price: price,
+            quantity: 1,
+            imageUrl: imageUrl
+        };
+    }
+
+    updateCartCount(++cartItemCount); // Increment count and update badge
+    updateCartMenu(); // Update cart menu
+    updateTotalPrice(); // Update total price
+    updateCartCountt(); // Update cart count for the alternate button
+    saveCartToLocalStorage(); // Save cart items to localStorage
+}
+
+function updateCartCountt() {
+    var cartCounttElement = document.getElementById("cartCountt");
+    cartCounttElement.textContent = cartItemCount;
+}
+
+function deleteFromCart(productName) {
+    if (cartItems.hasOwnProperty(productName)) {
+        cartItemCount -= cartItems[productName].quantity;
+        delete cartItems[productName];
+        updateCartCount(cartItemCount); // Decrement count and update badge
+        updateCartMenu(); // Update cart menu
+        updateTotalPrice(); // Update total price
+        updateCartCountt(); // Update cart count for the alternate button
+        saveCartToLocalStorage(); // Save cart items to localStorage
+    }
+}
+
+function increaseQuantity(productName) {
+    if (cartItems.hasOwnProperty(productName)) {
+        cartItems[productName].quantity++;
+        cartItemCount++;
+        updateCartCount(cartItemCount); // Update badge
+        updateCartMenu(); // Update cart menu
+        updateTotalPrice(); // Update total price
+        updateCartCountt(); // Update cart count for the alternate button
+        saveCartToLocalStorage(); // Save cart items to localStorage
+    }
+}
+
+function decreaseQuantity(productName) {
+    if (cartItems.hasOwnProperty(productName)) {
+        if (cartItems[productName].quantity > 1) {
+            cartItems[productName].quantity--;
+            cartItemCount--;
+            updateCartCount(cartItemCount); // Update badge
+            updateCartMenu(); // Update cart menu
+            updateTotalPrice(); // Update total price
+            updateCartCountt(); // Update cart count for the alternate button
+            saveCartToLocalStorage(); // Save cart items to localStorage
+        }
+    }
+}
+
+function updateCartCount(count) {
+    var cartCountElement = document.getElementById("cartCount");
+    cartCountElement.textContent = count;
+}
+
+function saveCartToLocalStorage() {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    localStorage.setItem('cartItemCount', cartItemCount);
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function updateTotalPrice() {
+    var totalPriceValueElement = document.getElementById("totalPriceValue");
+    var totalPrice = 0;
+    for (var productName in cartItems) {
+        totalPrice += cartItems[productName].price * cartItems[productName].quantity;
+    }
+    totalPriceValueElement.textContent = numberWithCommas(totalPrice.toFixed(2));
+    // Update text on checkout button
+    document.getElementById("checkoutBtn").textContent = "Checkout ₦" + numberWithCommas(totalPrice.toFixed(2));
+}
+
+function toggleCart() {
+    var cartMenu = document.getElementById("cartMenu");
+    cartMenu.classList.toggle("open");
+}
+
+// Get all add to cart buttons and add event listeners
+var addToCartButtons = document.querySelectorAll(".action-btn[aria-label='add to cart']");
+addToCartButtons.forEach(function(button) {
+    button.addEventListener("click", function(event) {
+        var productCard = event.target.closest(".shop-card");
+        var productName = productCard.querySelector(".card-title").textContent;
+        var productPrice = parseFloat(productCard.querySelector(".price .span").textContent.replace("N", "").replace(",", ""));
+        var productImage = productCard.querySelector(".card-banner img").src;
+        addToCart(productName, productPrice, productImage);
+    });
+});
+
+function checkout() {
+  alert("Redirecting to checkout page...");
+  // Implement your checkout logic here (e.g., redirect to checkout page)
+  window.location.href = "checkout.html"; // Redirect to checkout.html
+}
+
+        </script>
+        
+
+
+
+
+
+
+
+
+
+
+
+<div id="favoriteMenu" class="slide-in-menu">
+  <div class="menu-content">
+    <!-- Content of the favorite menu goes here -->
+  </div>
+</div>
+
+
+<script>
+  // Function to toggle the visibility of the favorite menu
+function toggleFavoriteMenu() {
+  var favoriteMenu = document.getElementById("favoriteMenu");
+  favoriteMenu.classList.toggle("open");
+}
+
+// Add event listener to the favorite button to toggle the menu
+var favoriteButton = document.querySelector(".header-action-btn[aria-label='favourite item']");
+favoriteButton.addEventListener("click", toggleFavoriteMenu);
+
+</script>
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
